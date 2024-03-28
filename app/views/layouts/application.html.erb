@@ -11,6 +11,15 @@
   </head>
 
   <body>
+  <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">🎬</a>
+    <div class="d-flex flex-row" style="gap: 8px">
+    <div><%= link_to "My lists", lists_path, class: "nav-link" %></div>
+    <div><%= link_to "New list", new_list_path, class: "nav-link" %></div>
+    </div>
+  </div>
+</nav>
     <%= yield %>
   </body>
 </html>

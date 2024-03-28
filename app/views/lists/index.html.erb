@@ -1,0 +1,22 @@
+
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/53890/article_full%401x.jpg)">
+   movies
+</div>
+<br/>
+<div class="container">
+<div class="d-flex align-items-center justify-content-between mb-5">
+<h2>Lists for movies</h2>
+<%= link_to "Create a movie list", new_list_path, class: "btn btn-success shadow" %>
+</div>
+<div class="card-container row">
+<% @lists.each do |list| %>
+<div class="col-12 col-sm-6 col-md-4">
+  <div class="card shadow mb-4" style="width: 15rem">
+      <div class="card-body">
+        <h5 class="card-title text-white text-center" style="height: 80px"><%= list.name %></h5>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+</div>
